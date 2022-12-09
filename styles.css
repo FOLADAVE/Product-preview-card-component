@@ -1,4 +1,5 @@
 
+
 /*  Dark cyan: hsl(158, 36%, 37%)
 - Cream: hsl(30, 38%, 92%)
 
@@ -10,10 +11,20 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,700;1,500&display=swap');
 .attribution {
-     font-size: 14px; text-align: center;
+     font-size: 14px;
+     text-align: center;
+     position: relative;
+     left: 420px;
      }
     .attribution a { 
         color: hsl(228, 45%, 44%);
+     }
+     .box {
+        width: 500px;
+        height: 680px;
+        padding: 10px;
+        margin: 0px;
+        background-color: hsl(30, 38%, 92%);
      }
      .card article:first-child {
         border-radius: 0.5rem;
@@ -21,22 +32,32 @@
      .card article:last-child{
 background-color: #ffff;
 padding: 1.5rem;
-border-radius:0 0 0.5rem 0.5rem;
+border-radius: 0px 0px 14px 14px;
+position: relative;
+left: -2px;
      }
      .card {
         max-width: 500px;
+        border-radius: 20px;
+        position:relative;
+        left: 420px;
      }
-     .body {
-        font-size: 14px;
+     body {font-size: 14px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         background-color: hsl(30, 38%, 92%);
         display: flex;
         flex-direction: column;
-align-items: center;
 justify-content: center;
-margin: 0 1.5rem;
-min-height: calc(100vh - 0.1px);
+    }
+    image {
+        display: flex;
+  justify-items: center;
+  flex-direction: column;
+    }
+    img {
+        border-radius: 14px 14px 0px 0px;
+        margin: -3px;
     }
     h1, .price {
         font-family: 'Fraunces', serif;
@@ -44,7 +65,7 @@ min-height: calc(100vh - 0.1px);
     h1 {
         color: hsl(212, 21%, 14%);
     }
-    button, li {
+    button, .old-price {
         font-family: inherit;
     }
     p {
@@ -74,8 +95,21 @@ min-height: calc(100vh - 0.1px);
     }
     .price {
         color: hsl(158, 36%, 37%);
-        font-size: 40px;
+        font-size: 28px;
+        font-weight: bold;
     }
+.old-price {
+    color: hsl(228, 12%, 48%);
+  justify-self: center;
+  align-self: center;
+  text-decoration: line-through;
+  font-weight: normal;
+  position:relative;
+  right: -130px;
+  top: -26px;
+  font-weight: normal;
+  font-size: 18px;
+}
     .btn {
         color:hsl(30, 38%, 92%);
         background-color: hsl(158, 36%, 37%);
@@ -85,4 +119,20 @@ min-height: calc(100vh - 0.1px);
         font-size: 20px;
         
     }
-    
+    .btn:hover {
+        background-color: rgb(3, 75, 50);
+      }
+      footer {
+        margin-top: 20px;
+      }
+    @media only screen and (max-width: 375px) {
+        .box {
+          width: 241px;
+          height: 510px;
+        }
+      }
+      @media only screen and (min-width: 1440px) {
+        .box {
+            width: 345px;
+        }
+      }
