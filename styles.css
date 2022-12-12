@@ -1,5 +1,6 @@
 
 
+
 /*  Dark cyan: hsl(158, 36%, 37%)
 - Cream: hsl(30, 38%, 92%)
 
@@ -126,13 +127,18 @@ justify-content: center;
         margin-top: 20px;
       }
     @media only screen and (max-width: 375px) {
-        .box {
+        .card {
           width: 241px;
           height: 510px;
         }
       }
       @media only screen and (min-width: 1440px) {
-        .box {
+        .card {
             width: 345px;
+        }
+      }
+      @media screen and (min-width: 375px) {
+        .card {
+            width:auto;
         }
       }
